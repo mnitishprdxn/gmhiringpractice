@@ -1,0 +1,476 @@
+@charset 'utf-8';
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*********************** Styling start **********************/
+
+.top-blue-header {
+  width: 100%;
+  height: 30px;
+  background: #35009e;
+}
+
+.heading-subheading-wrapper {
+  width: 95%;
+  max-width: 1035px;
+  margin: 0 auto;
+}
+
+
+.heading-subheading-wrapper:after {
+  width: 100%;
+  max-width: 100%;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 51px;
+  display: block;
+  background: skyblue;
+  content: '';
+}
+
+/*.heading-subheading-wrapper:after {
+  border-bottom: 2px solid skyblue;
+}*/
+
+.heading-subheading {
+  padding: 51px 0;
+  text-align: center;
+}
+
+.heading-subheading-wrapper h2 {
+  color: #039;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.37vw;
+  text-transform: uppercase;
+}
+
+.logo-heading img {
+  max-width: 100%;
+}
+
+.logo-heading {
+  text-align: left;
+}
+
+.logo-heading h1 {
+  width: 8.212560386473431%;
+  padding: 14px 0;
+  display: inline-block;
+  float: left;
+}
+
+.logo-heading h1 a { display: block;
+}
+
+
+.logo-heading h2 {
+  padding-left: 3.5748792270531404%;
+  display: inline-block;
+  color: #039;
+  font-family: 'Roboto' ,sans-serif;
+  font-size: 7.98vw;
+  text-transform: uppercase;
+}
+
+.quick-ref-subheading h2 {
+  color: #039;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.60vw;
+  font-weight: 300;
+}
+
+.headin-para {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.headin-para h2 {
+  color: #039;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.22vw;/* Approximation due to font substitution */
+  font-weight: 300;
+  text-align: left;
+}
+
+.headin-para p {
+  padding-top: 10px;
+  color: #77787b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.53vw;/* Approximation due to font substitution */
+  font-weight: 300;
+  text-align: left;
+}
+
+.do-you-have-talent {
+  width: 90%;
+  margin-top: 71px;
+  position: relative;
+}
+
+.do-you-have-talent img:nth-child(1) {
+  width: 30%;
+  position: absolute;
+  bottom: -28px;
+  left: 3%;
+}
+
+.do-you-have-talent {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.90vw;
+  font-weight: 700;
+  text-align: left;
+}
+
+.do-you-have-talent p:nth-child(3) {
+  position: absolute;
+  top: 13px;
+  left: 35%;
+}
+
+.six-to-eight-weeks {
+  margin-top: 28px;
+  position: relative;
+}
+
+.map {
+  width: 42%;
+  position: absolute;
+  top: 63%;
+  right: 0;
+}
+
+.do-you-have-talent p:nth-child(4) {
+  position: absolute;
+  top: 55px;
+  left: 35%;
+}
+
+.ready-to-discover {
+  margin-bottom: 29px;
+}
+
+.six-to-eight-weeks {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.six-to-eight-weeks-imgs {
+  width: 27%;
+  margin-top: 51px;
+  margin-right: 2.5%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+.six-to-eight-weeks-imgs p {
+  color: #233d94;
+  font-family: Roboto;
+  font-size: 2.70vw;/* Approximation due to font substitution */
+  font-weight: 700;
+}
+
+.six-to-eight-weeks-content {
+  width: 70%;
+  display: inline-block;
+}
+
+.six-to-eight-weeks-content p {
+  color: #77787b;
+  font-family: Roboto, sans-serif;
+  font-size: 1.77vw;/* Approximation due to font substitution */
+  font-weight: 400;
+}
+
+.six-to-eight-weeks-content p + p,
+.social-links-work {
+  padding-top: 30px;
+}
+
+.max-span {
+  color: #233d94;
+  font-family: Roboto, sans-serif;
+  font-size: 2.01vw;
+  font-weight: 600;
+}
+
+.min-span {
+  color: #233d94;
+  font-family: Roboto, sans-serif;
+  font-size: 1.53vw;
+  font-weight: 600;
+}
+
+.social-links-work p {
+  color: #233d94;
+  font-family: Roboto, sans-serif;
+  font-size: 1.53vw;
+  font-weight: 600;
+}
+
+.social-links-work p:first-letter {
+  text-transform: uppercase;
+}
+
+.social-links-work img { padding-top: 10px;
+}
+
+.newest-addition-to-family img {
+  width: 20%;
+  position: absolute;
+  top: -91px;
+  right: 6%;
+}
+
+.newest-addition-to-family p {
+  padding-top: 26px;
+  padding-left: 11%;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 2.63vw;
+  font-weight: 700;
+  text-align: left;
+}
+
+.newest-addition-to-family {
+  height: 98px;
+  margin-top: 59px;
+  position: relative;
+  background-color: #35009e;
+}
+
+.stepone-title {
+  width: 90%;
+  position: relative;
+}
+
+.stepone-title span:nth-child(1) {
+  font-family: Roboto, sans-serif;
+  color:  #000;
+  font-size: 75.11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+    top: 34px;
+    left: 22%;
+}
+
+.stepone-title span:nth-child(3) {
+  font-family: Roboto, sans-serif;
+  color:  #000;
+  font-size: 44.98px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  right: 10%;
+  top: 49px;
+}
+
+.step1 {
+  background: #FCF5E8;
+}
+
+.site img,
+.checklist img,
+.work-from-home img {
+  width: 12%;
+}
+
+.site p,
+.checklist p,
+.work-from-home p {
+  width: 35.05572441742654%;
+  font-family: Roboto, sans-serif;
+  color: #77787b;
+  font-size: 24.99px;
+  font-weight: 500;
+  text-align: left;
+  display: inline-block;
+}
+
+.site,
+.checklist,
+.work-from-home {
+  padding: 9%;
+  width: 82.25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checklist { background: #FBECD3; }
+
+.work-from-home { background: #FCE2BD; }
+ 
