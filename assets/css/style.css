@@ -1,0 +1,401 @@
+@charset 'utf-8';
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+}
+
+.cf:after {
+  clear: both;
+}
+
+/*********************** Styling start **********************/
+
+.top-blue-header {
+  width: 100%;
+  height: 30px;
+  background: #35009E;
+}
+
+.heading-subheading-wrapper {
+  max-width: 1035px;
+  width: 95%;
+  margin: 0 auto; 
+}
+
+
+.heading-subheading-wrapper:after {
+  content: '';
+  display: block;
+  background: skyblue;
+  height: 4px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 51px;
+}
+
+/*.heading-subheading-wrapper:after {
+  border-bottom: 2px solid skyblue;
+}*/
+
+.heading-subheading {
+  padding: 51px 0;
+  text-align: center; 
+}
+
+.heading-subheading-wrapper h2 {
+  font-family: 'Roboto', sans-serif;
+  color:  #003399;
+  font-size: 4.37vw;
+  text-transform: uppercase;
+}
+
+.logo-heading img {
+  max-width: 100%;
+ } 
+
+.logo-heading {
+  text-align: left;
+}
+
+.logo-heading h1 {
+  display: inline-block;
+  width: 8.212560386473431%;
+  float: left;
+  padding: 14px 0;
+}
+
+.logo-heading h1 a { display: block; }
+
+
+.logo-heading h2 {
+  font-family: 'Roboto' ,sans-serif;
+  color:  #003399;
+  font-size: 7.98vw;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-left: 3.5748792270531404%;
+}
+
+.quick-ref-subheading h2 {
+  font-family: 'Roboto', sans-serif;
+  color:  #003399;
+  font-size: 2.60vw;
+  font-weight: 300;
+}
+
+.headin-para {
+  width:80%;
+  margin: 0 auto;
+}
+
+.headin-para h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #003399;
+  font-size: 2.22vw;/* Approximation due to font substitution */
+  font-weight: 300;
+  text-align: left;
+}
+
+.headin-para p {
+  padding-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #77787b;
+  font-size: 1.53vw;/* Approximation due to font substitution */
+  font-weight: 300;
+  text-align: left;
+}
+
+.do-you-have-talent {
+  margin-top: 71px;
+  position: relative;
+  width: 90%;
+}
+
+.do-you-have-talent img:nth-child(1) {
+    width: 30%;
+    position: absolute;
+    bottom: -28px;
+    left: 3%;
+}
+
+.do-you-have-talent {
+  font-family: 'Roboto', sans-serif;
+  color:  #fff;
+  font-size: 2.90vw;
+  font-weight: 700;
+  text-align: left;
+}
+
+.do-you-have-talent p:nth-child(3) {
+  position: absolute;
+  top: 13px;
+  left: 35%;
+}
+
+.six-to-eight-weeks {
+  margin-top: 28px;
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  right: 0;
+  top: 63%;
+  width: 42%;
+}
+
+.do-you-have-talent p:nth-child(4) {
+  position: absolute;
+  top: 55px;
+  left: 35%;
+}
+
+.ready-to-discover {
+  margin-bottom: 29px;
+}
+
+.six-to-eight-weeks {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.six-to-eight-weeks-imgs{
+  width: 27%;
+  margin-top: 51px;
+  display: inline-block;
+  margin-right: 2.5%;
+  text-align: center;
+  float: left;
+}
+
+.six-to-eight-weeks-imgs p {
+  font-family: Roboto;
+  color:  #233d94;
+  font-size: 2.70vw;/* Approximation due to font substitution */
+  font-weight: 700;
+  }
+
+.six-to-eight-weeks-content {
+  width: 70%;
+  display: inline-block;
+}
+
+.six-to-eight-weeks-content p {
+  font-family: Roboto, sans-serif;
+  color:  #77787b;
+  font-size: 1.77vw;/* Approximation due to font substitution */
+  font-weight: 400;
+}
+
+.six-to-eight-weeks-content p+p,
+.social-links-work {
+  padding-top: 30px;
+}
+
+.max-span {
+  font-size: 2.01vw;
+  font-family: Roboto, sans-serif;
+  color:  #233d94;
+  font-weight: 600;
+}
+
+.min-span {
+  font-size: 1.53vw;
+  font-family: Roboto, sans-serif;
+  color:  #233d94;
+  font-weight: 600;
+}
+
+.social-links-work p {
+  font-size: 1.53vw;
+  font-family: Roboto, sans-serif;
+  color:  #233d94;
+  font-weight: 600;
+}
+
+.social-links-work p:first-letter {
+  text-transform: uppercase;
+}
+
+.social-links-work img { padding-top: 10px; }
+
+.newest-addition-to-family img {
+  width: 28%;
+}
+
+.newest-addition-to-family p {
+  font-family: Roboto, sans-serif;
+  color:  #000;
+  font-size: 2.63vw;
+  font-weight: 700;
+  text-align: left;
+}
+
+
+
+
