@@ -447,6 +447,10 @@ sub {
   width: 12%;
 }
 
+.work-from-home img:nth-child(2) {
+  width: 23%;
+}
+
 .site p,
 .checklist p,
 .work-from-home p {
